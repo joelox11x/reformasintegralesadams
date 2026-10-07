@@ -98,7 +98,16 @@ footer{background:#060e1d var(--nz);color:#b3ab9f;padding:44px 0 40px;font-size:
 @media(prefers-reduced-motion:reduce){.wa{animation:none}}
 @media(max-width:600px){.wa{width:54px;height:54px;right:14px;bottom:16px}.gi:nth-child(9){display:none}}
 
-.card:last-child{grid-column:1/-1}.card:last-child p{max-width:640px}</style></head>
+.card:last-child{grid-column:1/-1}.card:last-child p{max-width:640px}
+/* ---- mobile hardening ---- */
+html,body{max-width:100%;overflow-x:clip}
+.two>*,.ct>*,.cd>div,form>*,.sg>*,.why>*{min-width:0}
+h1,h2,h3,p,a{overflow-wrap:break-word}.cd b{overflow-wrap:anywhere}
+#hero{width:100%;contain:paint}
+@media(max-width:960px){.im::before{inset:14px 0 -14px 14px}
+.sl{clip-path:none;opacity:0;transition:opacity 1s,visibility 0s 1s}.sl.on{opacity:1;clip-path:none;transition:opacity 1s,visibility 0s}.sl.out{opacity:1;clip-path:none}}
+@media(max-width:600px){.cd b{font-size:clamp(16px,5vw,20px)}.trust b{font-size:17px}footer .wrap{flex-direction:column;align-items:flex-start}}
+</style></head>
 <body><script>document.documentElement.classList.add('js')</script>
 <a class="skip" href="#main">Saltar al contenido</a><div id="pg"></div>
 <nav id="nav" aria-label="Principal"><div class="wrap">
@@ -132,22 +141,22 @@ footer{background:#060e1d var(--nz);color:#b3ab9f;padding:44px 0 40px;font-size:
 <script>
 /* ===== IMÁGENES: sustituye por tus URLs ===== */
 const IMG={
- "logo": "http://arqfra-ai.com/wp-content/uploads/2026/10/reformas_integrales.jpg",
+ "logo": "https://arqfra-ai.com/wp-content/uploads/2026/10/reformas_integrales.jpg",
  "hero": [
-  "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM.jpeg",
-  "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM.jpeg"
+  "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM.jpeg",
+  "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM.jpeg"
  ],
- "about": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.14-AM.jpeg",
- "cta": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.13-AM.jpeg",
- "g1": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-1.jpeg",
- "g2": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-2.jpeg",
- "g3": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-3.jpeg",
- "g4": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-4.jpeg",
- "g5": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-5.jpeg",
- "g6": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-6.jpeg",
- "g7": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM-1.jpeg",
- "g8": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM-2.jpeg",
- "g9": "http://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.12-AM-1.jpeg"
+ "about": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.14-AM.jpeg",
+ "cta": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.13-AM.jpeg",
+ "g1": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-1.jpeg",
+ "g2": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-2.jpeg",
+ "g3": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-3.jpeg",
+ "g4": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-4.jpeg",
+ "g5": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-5.jpeg",
+ "g6": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.10-AM-6.jpeg",
+ "g7": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM-1.jpeg",
+ "g8": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.11-AM-2.jpeg",
+ "g9": "https://arqfra-ai.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-05-at-6.17.12-AM-1.jpeg"
 };
 const $=(s,r=document)=>[...r.querySelectorAll(s)],q=s=>document.querySelector(s);
 $('[data-logo]').forEach(i=>i.src=IMG.logo);
