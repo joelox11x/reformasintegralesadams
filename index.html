@@ -8,7 +8,7 @@
 <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--gold:#F28A1E;--bg:#0a1428;--bg2:#101d38;--line:#223457;--tx:#f2f5fb;--mu:#9fb0cc;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Outfit',system-ui,sans-serif;--ease:cubic-bezier(.22,.7,.2,1);--up:translateY(34px);--nz:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E")}
 body.light{--bg:#f6f8fc;--bg2:#e8eef8;--line:#d5deee;--tx:#0a1428;--mu:#52617d}
-#hero,.cta .in,#mm,footer{--gold:#F28A1E}
+#inicio,.cta .in,#mm,footer{--gold:#F28A1E}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{font-family:var(--sans);background:var(--bg) var(--nz);color:var(--tx);overflow-x:hidden;transition:background-color .3s,color .3s;line-height:1.6}
 body.lock{overflow:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
@@ -42,7 +42,7 @@ nav .wrap{display:flex;align-items:center;gap:22px}
 #mm.on li,#mm.on .mc{opacity:1;transform:none}#mm.on li{transition-delay:calc(.2s + var(--d,0)*.06s)}
 #mm li a{display:flex;align-items:baseline;gap:16px;font:32px/1.2 var(--serif);padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);transition:color .3s,padding-left .3s var(--ease)}#mm li a span{font:12px var(--sans);color:var(--gold)}#mm li a:hover{color:var(--gold);padding-left:12px}
 #mm .mc{opacity:0;transform:translateY(20px);transition:.5s var(--ease) .65s;text-align:center}#mm .mc .btn{width:100%}#mm .mc p{margin-top:14px;color:var(--mu)}
-#hero{padding:0;height:100svh;min-height:660px;position:relative;overflow:hidden;background:#060e1d;color:#fff}
+#inicio{padding:0;height:100svh;min-height:660px;position:relative;overflow:hidden;background:#060e1d;color:#fff}
 .sl{position:absolute;inset:0;visibility:hidden;z-index:1;clip-path:inset(0 0 0 100%);transition:clip-path 1.1s var(--ease),visibility 0s 1.2s}.sl.out{visibility:visible;clip-path:inset(0);transition:none}.sl.on{visibility:visible;z-index:2;clip-path:inset(0);transition:clip-path 1.1s var(--ease),visibility 0s}
 .sl .bg{position:absolute;inset:0;background:center/cover;transform:scale(1.25)}.sl.on .bg{animation:kb 9s var(--ease) forwards}.sl.out .bg{transform:scale(1.12)}@keyframes kb{from{transform:scale(1.25)}to{transform:scale(1.06)}}
 .sl::after{content:'';position:absolute;inset:0;background:var(--nz),linear-gradient(95deg,rgba(6,12,26,.9),rgba(6,12,26,.55) 55%,rgba(6,12,26,.3))}
@@ -103,7 +103,7 @@ footer{background:#060e1d var(--nz);color:#b3ab9f;padding:44px 0 40px;font-size:
 html,body{max-width:100%;overflow-x:clip}
 .two>*,.ct>*,.cd>div,form>*,.sg>*,.why>*{min-width:0}
 h1,h2,h3,p,a{overflow-wrap:break-word}.cd b{overflow-wrap:anywhere}
-#hero{width:100%;contain:paint}
+#inicio{width:100%;contain:paint}
 @media(max-width:960px){.im::before{inset:14px 0 -14px 14px}
 .sl{clip-path:none;opacity:0;transition:opacity 1s,visibility 0s 1s}.sl.on{opacity:1;clip-path:none;transition:opacity 1s,visibility 0s}.sl.out{opacity:1;clip-path:none}}
 @media(max-width:600px){.cd b{font-size:clamp(16px,5vw,20px)}.trust b{font-size:17px}footer .wrap{flex-direction:column;align-items:flex-start}}
